@@ -1,0 +1,14 @@
+exp 7 (III) - STUDENT STATUS
+
+Public Class Form1 
+Private Sub  
+Button1_Click(sender As Object, e As EventArgs) Handles  
+Button1.Click  
+MessageBox.Show("You have not paid the fees") 
+End Sub 
+Private Sub  
+Button2_Click(sender As Object, e As EventArgs) Handles  
+Button2.Click  
+Close() 
+End Sub  
+End Class

@@ -1,0 +1,25 @@
+exp1 -1(c) time manipulation
+
+using System; 
+class Program { 
+static void Main() { 
+ 
+ 
+DateTime time1 = new DateTime(2024, 6, 26, 10, 30, 0); // 10:30 AM 
+DateTime time2 = new DateTime(2024, 6, 26, 14, 45, 0); // 2:45 PM 
+ 
+
+Console.WriteLine("Time 1: " + time1.ToString("hh:mm tt")); 
+Console.WriteLine("Time 2: " + time2.ToString("hh:mm tt")); 
+ 
+
+DateTime addedTime = time1.AddHours(2).AddMinutes(15); 
+DateTime subtractedTime = time2.Subtract(TimeSpan.FromHours(1));         
+ 
+ 
+Console.WriteLine("\nAfter adding 2 hours and 15 minutes to Time 1:"); 
+Console.WriteLine("Result: " + addedTime.ToString("hh:mm tt")); 
+Console.WriteLine("\nAfter subtracting 1 hour from Time 2:"); 
+Console.WriteLine("Result: " + subtractedTime.ToString("hh:mm tt")); 
+} 
+}

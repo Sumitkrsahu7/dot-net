@@ -1,0 +1,34 @@
+exp2 - employee details multiple inherintnce
+
+using System; 
+namespace MultipleInheritanceExample { 
+interface IEmployee { 
+void DisplayEmployeeDetails(); 
+} interface IPerson { 
+void DisplayPersonDetails(); 
+} 
+class EmployeeDetails : IEmployee, IPerson { 
+public string EmployeeId { get; set; } 
+public string Department { get; set; } 
+public string Name { get; set; } 
+public int Age { get; set; } 
+public void DisplayEmployeeDetails() { 
+Console.WriteLine($"Employee ID: {EmployeeId}, Department: {Department}"); 
+} 
+public void DisplayPersonDetails() { 
+Console.WriteLine($"Name: {Name}, Age: {Age}"); 
+} 
+} 
+class Program{ 
+static void Main(string[] args){ 
+EmployeeDetails employeeDetails = new EmployeeDetails{ 
+EmployeeId = "E123",            Department = "IT", 
+Name = "John Doe",                Age = 30 
+}; 
+employeeDetails.DisplayPersonDetails(); 
+ 
+ 
+employeeDetails.DisplayEmployeeDetails(); 
+} 
+} 
+}

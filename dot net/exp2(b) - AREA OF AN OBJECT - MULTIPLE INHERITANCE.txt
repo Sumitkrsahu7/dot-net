@@ -1,0 +1,25 @@
+exp2(b) - AREA OF AN OBJECT - MULTIPLE INHERITANCE
+
+using System; 
+namespace MultipleInheritanceExample { 
+interface IArea { 
+double CalculateArea(); 
+} 
+class Rectangle : IArea { 
+public double Width { get; set; } 
+public double Height { get; set; } 
+public double CalculateArea() => Width * Height; 
+} 
+class Circle : IArea { 
+public double Radius { get; set; } 
+public double CalculateArea() => Math.PI * Radius * Radius; 
+} 
+class Program { 
+static void Main(string[] args) { 
+IArea rectangle = new Rectangle { Width = 5, Height = 10 }; 
+IArea circle = new Circle { Radius = 7 }; 
+Console.WriteLine($"Rectangle Area: {rectangle.CalculateArea()}"); 
+Console.WriteLine($"Circle Area: {circle.CalculateArea()}"); 
+} 
+} 
+}

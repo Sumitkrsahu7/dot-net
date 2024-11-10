@@ -1,0 +1,54 @@
+exp 6 - FILE HANDLING
+
+------------------ 
+To READ FILE 
+------------------ 
+Imports System.IO  
+Module Module1 
+Sub Main() 
+Dim str As String = Nothing  
+Try 
+str = File.ReadAllText("D:\myFile.txt")  
+Console.WriteLine("Content of file: {0}", str) 
+Catch ex As FileNotFoundException  
+Console.WriteLine("File does not exist") 
+End Try End Sub 
+End Module 
+
+
+--------------------------------- 
+TO MODIFY OR APPEND 
+--------------------------------- 
+Imports System.IO  
+Module Module1 
+Sub Main() 
+Dim str As String = Nothing Try 
+str = File.ReadAllText("D:\myFile.txt")  
+Console.WriteLine("Content of file before append text: ")  
+Console.WriteLine(str) 
+Console.WriteLine("Enter text to append into file:")  
+ 
+str = Console.ReadLine()  
+File.AppendAllText("D:\myFile.txt", str)  
+Console.WriteLine("Content after append:") 
+str = File.ReadAllText("myFile.txt")  
+Console.WriteLine(str) 
+Catch ex As FileNotFoundException  
+Console.WriteLine("File does not exist") 
+End Try End Sub 
+End Module 
+
+---------------------- 
+To DELETE FILE 
+---------------------- 
+'VB.Net program to delete a specified file.  
+Imports System.IO 
+Module Module1  
+Sub Main() 
+Try 
+File.Delete("D:\myFile.txt")  
+Console.WriteLine("File deleted successfully") 
+Catch ex As FileNotFoundException  
+Console.WriteLine("File does not exist") 
+End Try End Sub 
+End Module 

@@ -1,0 +1,99 @@
+Exp 4 - classification using weka tool kit - part 1
+
+Datasetstudent.arff 
+ 
+@relation student 
+@attribute age{<30,30-40,>40} 
+@attribute income {low, medium, high} @attribute student {yes, no} 
+@attributecredit-rating{fair,excellent} @attribute buyspc {yes, no} 
+@data 
+% 
+<30, high,no,fair,no 
+<30,high,no,excellent,no 30-40, high, no, fair, yes 
+>40,medium,no,fair,yes 
+>40,low, yes, fair,yes 
+>40, low, yes, excellent, no 30-40,low,yes,excellent,yes 
+<30,medium,no,fair,no 
+Sumit Kumar 16 211061101448  
+<30,low, yes, fair,no>40,medium,yes,fair,yes 
+<30, medium, yes, excellent, yes 30-40,medium,no,excellent,yes 30-40, high, yes, fair, yes 
+>40,medium,no,excellent,no 
+% 
+
+
+
+
+Exp 5 - classification using weka tool kit - part 2
+Dataset employee.arff 
+ 
+@relation employee 
+@attribute age{25,27,28,29,30,35,48} 
+@attribute salary{10k,15k,17k,20k,25k,30k,35k,32k} 
+@attribute performance {good, avg, poor} 
+@data 
+% 
+25,10k,poor 
+27,15k,poor 
+27,17k,poor 
+28,17k,poor 
+29,20k,avg 
+30,25k,avg 
+Sumit Kumar 18 211061101448  
+29,25k,avg 
+30,20k,avg 
+35,32k,good 
+48,34k,good 
+48,32k,good 
+%
+
+
+
+
+Exp 6 - PERFORMING DATA PREPROCESSING FOR DATA MINING IN WEKA
+@relation student 
+@attribute age{<30,30-40,>40} 
+@attribute income {low, medium, high} 
+@attribute student {yes, no} 
+@attribute credit-rating{fair,excellent} 
+@attribute buyspc {yes, no} 
+@data 
+% 
+<30, high,no,fair,no 
+<30,high,no,excellent,no 30-40, high, no, fair, yes 
+>40,medium,no,fair,yes 
+>40,low, yes, fair,yes 
+>40, low, yes, excellent, no 30-40,low,yes,excellent,yes 
+<30,medium,no,fair,no 
+<30,low, yes, fair,no 
+>40,medium,yes,fair,yes 
+<30, medium, yes, excellent, yes 30-40,medium,no,excellent,yes 30-40, high, yes, fair, yes 
+>40,medium,no,excellent,no 
+% 
+
+
+
+
+
+
+Exp 7 - PERFORMING CLUSTERING IN WEKA
+Dataset student.arff 
+@relation student 
+@attribute age{<30,30,40,>40} 
+@attribute income{low,medium,high} 
+@attribute student {yes,no} @attribute credit-rating 
+{fair,excellent}@attribute buyspc 
+{yes,no} @data 
+% 
+<30, high, no, fair, no 
+<30, high, no, excellent, 
+no30-40, high, no, fair, yes 
+>40, medium, no, fair, yes 
+>40, low, yes, fair, yes 
+>40, low, yes,excellent, no 
+30-40, low, yes, excellent, yes 
+<30, medium, no, fair, no 
+<30, low, yes, fair, no 
+>40, medium, yes, fair, yes 
+<30, medium, yes, excellent, yes 30-40, medium, no, excellent, yes30-40, high, yes, fair, yes 
+>40, medium, no, excellent, no 
+% 
